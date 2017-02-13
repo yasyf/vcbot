@@ -1,10 +1,12 @@
 from api import API
 from stream import Stream
-import markovify, constants, os, time
+import markovify, constants, os, time, random
 
 TWEET_SIZE = 140
 MEDIUM_WEIGHT = 1
 TWEET_DELAY = 60 * 60
+SEED_TRIES = 3
+SEED_PROB = 0.7
 
 def markovify_file(path):
   if not os.path.exists(path):
@@ -38,6 +40,28 @@ class VCBot(object):
     medium_model = markovify_file(constants.MEDIUM_PATH)
     self.model = markovify.combine(tweet_models + [medium_model], [1] * len(tweet_models) + [MEDIUM_WEIGHT])
 
-  def generate_tweet(self, username):
-    tweet = self.model.make_short_sentence(TWEET_SIZE - len(username) - 1)
+  def generate_tweet(self, username, seed):
+    words = seed.split(' ')
+    length = TWEET_SIZE - len(username) - 1
+    tweet = None
+
+    if random.random() <= SEED_PROB:
+      try:
+        first_seed = filter(str.istitle, words)[0]
+      except IndexError:
+        first_seed = random.choice(words)
+      possible_seeds = [first_seed] + random.sample(words, SEED_TRIES - 1)
+
+      for seed in possible_seeds:
+        state = (markovify.chain.BEGIN, seed)
+        try:
+          tweet = self.model.make_short_sentence(length, init_state=state)
+        except KeyError:
+          continue
+        if tweet:
+          break
+
+    if not tweet:
+      tweet = self.model.make_short_sentence(length)
+
     return '@{username} {tweet}'.format(username=username, tweet=tweet)

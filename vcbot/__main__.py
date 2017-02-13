@@ -10,7 +10,7 @@ def train():
 
 def test():
   bot = VCBot()
-  print bot.generate_tweet('VCBot')
+  print bot.generate_tweet('VCBot', 'yes no hello love Stanford')
 
 if __name__ == '__main__':
   start()
