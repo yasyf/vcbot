@@ -3,7 +3,7 @@ from stream import Stream
 import markovify, constants, os, time
 
 TWEET_SIZE = 140
-MEDIUM_WEIGHT = 0.05
+MEDIUM_WEIGHT = 1
 TWEET_DELAY = 60 * 60
 
 def markovify_file(path):
