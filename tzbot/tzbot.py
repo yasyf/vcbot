@@ -1,9 +1,10 @@
 from api import API
 from stream import Stream
-import markovify, constants, os
+import markovify, constants, os, time
 
 TWEET_SIZE = 140
 MEDIUM_WEIGHT = 0.05
+TWEET_DELAY = 60 * 60
 
 def markovify_file(path):
   if not os.path.exists(path):
@@ -16,7 +17,14 @@ class TZBot(object):
   def __init__(self):
     self.api = API()
     self.stream = Stream(self)
+    self.last_tweet = 0
+
     self._set_model()
+
+  def maybe_tweet(self):
+    if (time.time() - self.last_tweet) > TWEET_DELAY:
+      self.last_tweet = time.time()
+      self.api.tweet(self.model.make_short_sentence(TWEET_SIZE))
 
   def come_alive(self):
     self.stream.start()

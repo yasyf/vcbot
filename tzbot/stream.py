@@ -10,6 +10,8 @@ class StreamListener(tweepy.StreamListener):
   def on_status(self, status):
     if status.user.screen_name != USERNAME and not status.retweeted:
       self.api.update_status(self.bot.generate_tweet(status.user.screen_name), status.id)
+    else:
+      self.bot.maybe_tweet()
 
 class Stream(object):
   def __init__(self, bot):
