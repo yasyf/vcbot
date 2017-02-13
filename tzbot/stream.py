@@ -6,7 +6,8 @@ USERNAME = os.getenv('TWITTER_USERNAME')
 class StreamListener(tweepy.StreamListener):
   def on_status(self, status):
     if status.user.screen_name != USERNAME and not status.retweeted:
-      message = '@{} {} to you too!'.format(status.user.screen_name, status.text)
+      text = ' '.join(status.text.split(' ')[1:])
+      message = '@{} {} to you too!'.format(status.user.screen_name, text)
       self.api.update_status(message, status.id)
 
 class Stream(object):
