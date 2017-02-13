@@ -13,6 +13,9 @@ class StreamListener(tweepy.StreamListener):
     else:
       self.bot.maybe_tweet()
 
+  def keep_alive(self):
+    self.bot.maybe_tweet()
+
 class Stream(object):
   def __init__(self, bot):
     self.bot = bot
