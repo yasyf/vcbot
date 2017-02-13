@@ -1,0 +1,268 @@
+55 things learned as a 19 year old VC
+
+Background about myself :
+Analyst at Binary Capital –
+Early stage consumer tech VC firm with $300m under management founded by Justin Caldbeck (former Managing Director @ Lightspeed) and Jonathan Teo (former Managing Director @ General Catalyst)
+
+This might be useful to you if you want to learn more about the VC industry as a founder, junior VC, or aspiring VC
+
+It’s divided into 3 sections — feel free to skip around:
+Overview of what I learned about the whole industry
+Suggestions for founders
+Suggestions for junior VCs
+Things I learned about the VC Industry:
+The job is so unstructured
+ I knew going in that being a VC was going to be a pretty unstructured job, but I didn’t know it was going to be *this* unstructured
+ Basically, sink or swim
+ 🏊
+VC Pipeline = Access/Network + Judgment + Winning
+ Venture Capital is basically 3 things: 1) getting access to investment rounds — this includes both hearing about the companies, which involves having a diverse and strong network, & also being able to get in front of the entrepreneur if a relationship hasn’t already been built
+ 2) assessing potential investments and developing good judgment in picking the best companies from a sea of thousands
+ 3) convincing the founders to take your money
+ As a VC, you have to build a reputation as someone who can add real value (some examples are helping with recruiting, PR, business development, community, branding, product/design/technical aspects) & someone who they can rant to and have a shoulder to cry on during difficult times
+
+I learned how to ask better questions and definitely underestimated how important and hard it is to ask the right questions which will get you the answers you are looking for
+ It took sitting in on a ton of startup pitches with Justin and Jon and taking notes on the questions they asked to develop this soft skill
+ The key to asking good questions is admitting what you don’t know, and being able to clearly articulate what you do understand
+ Next most important thing is to actually listen
+
+To expand on that, always ask why
+ Keep digging deeper until you can’t ask why anymore
+ Justin unequivocally drilled this trait into me in the last year, and it’s been such a valuable mindset to adopt
+
+Consumer tech falls under 2 categories: social or transactional (marketplaces, e-commerce, financial tech, health tech, real estate, etc)
+
+High-level framework that I adopted from Jon for assessing consumer social products: 1) Does it have utility and actually solve a real problem? 2) Does it appeal to people’s innate narcissism? 3) Is it entertaining? 4) Is there a passionate community that’s talking about your product online without being forced or paid to do so (do a quick Twitter search)? Let’s break down a popular consumer social product at its early stages — Instagram
+ Utility? Their photo filters made your photos look way better
+ Narcissism? People get to show off how cool their life is and build a personal portfolio of snapshots from their oh-so-awesome life
+ Entertaining? I could spend hours scrolling through my Instagram feed looking at all the beautiful photos people are sharing, making me want to travel to a certain country or eat at a specific restaurant
+ Community? No question
+
+Consumer social products typically evolve as such: Utility → Platform → Ecosystem
+Personal high-level framework for assessing consumer marketplaces: 1) Positive unit economics 2) Amazing branding 3) Strong community 4) Great SEO/ASO (Search Engine Optimization / App Store Optimization)
+Be nice
+ Simple advice
+ But somehow, it’s not expressed enough in this community
+ It makes me sad that being nice is a competitive advantage as a VC in this day and age
+
+No one knows what they’re doing
+ Seriously
+ No matter how much they pretend like they do ;) I’ve met a ton of successful partners who you would expect could predict the future based on their track record and are aiming to skate where the puck is going, but when I talk to them, they seem to have as much of a clue as I do…
+VC is a service business, and basically sales
+ You’re always selling
+ You’re “selling” yourself and your firm to entrepreneurs as someone they should partner with and take money from
+ You’re “selling” your portfolio companies to potential hires, users, partnerships, and investors
+ You’re “selling” to LPs to get them to invest in your fund
+ Always be sellin’
+
+Be super open-minded
+ You can try to be as unbiased as you want but you will inevitably still be, so try your best to remove preconceptions when looking at a company
+ Especially don’t underestimate the products that look like toys initially
+ For Series A rounds and onwards, data wins, after you believe in the premise/vision + team, of course
+
+You trade in your beginner’s mindset for a more analytical assessment on ideas
+ By that I mean, initially, you believe anything is possible and that so many ideas are cool
+ After spending some time in the space and learning about what types of companies become successful, you stop looking at the world through a rainbow, all-is-great, point of view
+ You start asking better, and more, questions
+ You don’t just take anything at face value anymore
+ I’m happy about this but it also means I think about an idea for weeks before I decide whether it’s worth pursuing rather than just hacking it together in a weekend and shipping it
+
+Transparency + Honesty + Empathy + Integrity
+ Work with people who possess these traits
+ And obviously, hold yourself to the same standards
+ Paired with #9
+
+Pro-Tip for those looking to get into venture: When VC firms close new funds, they’re most likely going to be hiring
+
+VC is fun if you’re naturally competitive, and it won’t be if you aren’t
+
+People I haven’t talked to in 5 years started hitting me up
+ It’s bizarre but I guess everyone’s a founder of some sort of app nowadays? 😂
+This seems obvious but spend time where the people you want to meet hang out
+ If you want to meet VCs → Twitter
+ If you want to meet engineers or designers or learn those skills → hackathons are a good place to start
+ Build a strong network in a relevant, concentrated space
+ Reach out to people who have a job you think you’d be interested in doing
+
+Regardless of what you want to do, you need to build your personal brand
+ Start with an active online presence, because, you know, it’s 2017 and people need to be able to find you on the interwebs
+ In fact, they shouldn’t have to find you — they should just see you, and then start seeing you everywhere
+ Lots of doors opened up to me because I spent a lot of time in the last 3 years building my online brand and persona, specifically on Twitter
+ In fact, for the 1st year I started using Twitter, people started referring to me as “Tiffany from Twitter
+ ”
+Have strong opinions, weakly held
+ Have thick skin and be fearless
+ Jump into Twitter conversations where you feel like you don’t belong, ask questions even if you think they’re stupid, generously give your ideas to others, share unique perspectives on topics, have conviction, and express your thoughts even if they may be wrong
+ Don’t be stubborn, rude, and annoying
+ But most importantly, be willing to learn from others and develop a growth mindset
+
+Double opt-in intros
+ Always
+
+When asking for intros, make it as easy as possible for the connector
+ For example, send an email to the connector that they can easily forward to the person you’d like to be introduced to
+
+Venture capital has an incredibly long feedback loop
+ You have no idea if you’re performing well or not, besides qualitative feedback from your partners, portfolio companies, and founders you pass on if they’re willing to give you feedback
+ It can get disheartening when you spend hours and weeks looking through hundreds of companies and don’t end up investing in any
+
+No one will be able to tell you how to succeed, because no one knows
+
+The default mode is FAILURE
+
+Early stage VC is 95% based on team, product, and market, and 5% on numbers and data
+
+In my humble opinion, passion, hard work, empathy, hustle, and self-awareness outweighs intelligence and analytical skills
+
+“Never let anyone regret that they spent time with you
+” — Jon Teo
+Be skeptical
+ Don’t believe everything you hear! I don’t want to be a cynic, but this rule applies to life too, unfortunately
+
+And try to avoid as much gossip as possible, whether you’re a VC or a founder
+ The VC world in SF and NYC are especially dense and word will spread quickly
+
+After being ingrained in the VC world for awhile, you learn a lot about human psychology, social structures, understanding power dynamics, and the art of persuasion
+ How do you message someone in order to get a response or a meeting? Who’s the best person to first reach out to — managing director? associate? analyst? Who are the decision makers?
+I got overwhelmed meeting so many people in the past year, probably in the thousands
+ My good friend Sarah Guo described the job best when we were discussing the extremely extroverted personality that’s required to be a good VC, especially as a junior VC who is just getting started
+
+
+And lastly, you’ve heard this before already, but there’s nothing more important than surrounding yourself with the best — people who not only make you smarter and more well-rounded, but also a better person
+
+You are who you hang out with
+ Choose very wisely
+ 💁🏻
+
+https://twitter
+com/tzhongg/status/725890057626775552
+To founders:
+The sad truth is that most VCs are super ADD and get distracted/bored quickly
+ Don’t wait till the middle of your pitch to unveil whatever makes your startup better than the others
+ Cut to the chase
+
+Here are a few example questions VCs will ask to get a sense of the overall startup: On background & team — what made you want to build this company? how did the founders meet? (essentially testing for founder-market fit) On traction & ability to execute — for consumer social products: active users (DAU / WAU / MAU), retention, engagement
+ For consumer marketplaces: check out Bill Gurley’s piece and Version One’s guide
+
+Reply to junior VCs
+ They have a lot more power than you think, and can help push your company through their firm’s pipeline
+
+Reply to VCs even if they pass on you
+ Also don’t be unnecessarily aggressive if this does end up happening – just prove them wrong
+
+Keep junior folks in the loop
+ This is probably more relevant for communication with smaller VC firms, rather than with big ones
+ For me, on an investment team of 4, I always felt extra appreciated when founders took the time to find my email after the meeting and loop me into follow up emails and updates
+ Trust me, we notice
+ The little things matter
+
+Be confident in yourself and your business — don’t let VCs push you around
+
+Just like how a potential investor is going to do a background check on you, you should do the same with him/her and the firm
+ Talk to 1–2 of each: 1) current investments 2) dead portfolio companies and maybe even 3) founders they passed on
+ It’s surprising how many people don’t talk about this, but it’s quite important to know whether this VC is actually useful, will help you through thick and thin, and will follow through on promises
+
+Check out this tweet below and think about how it relates to your company and end goal, and whether you even need VC money
+ Not everyone needs to raise, and sometimes bootstrapping is the way to go
+
+
+To junior VCs:
+Use Twitter
+ I built most of my “adult” network on Twitter
+ I can’t stress enough how valuable it is to use if you work in tech – I sometimes speak at conferences and a big portion of my talk is about how “Twitter changed my life
+ ” My close friend Blake Robbins is a VC in Detroit, yet still gets great deal flow because of the network he’s built on Twitter — we obviously met on there and now we talk pretty much everyday! Here are some Twitter tips from my buddy Ryan Dawidjan
+
+But do NOT use tech VC Twitter for sourcing – that results in false positives and falling prey to investing off of hype and FOMO
+ What I mean by this is, once a consumer app starts blowing up, you’ll see the VC world start tweeting about it with each other and hyping it up on Twitter
+ 2 things happen as a result: 1
+ This creates a false positive in terms of how popular the app actually is amongst normal users because it’s just VCs talking about it in their own bubble
+ 2
+ This also leads to FOMO because VCs start scrambling to get into the deal because they think other VCs are talking about the company and potentially investing, so they should to
+
+This leads to my next point…develop your own conviction around companies
+ Don’t just blindly agree with your colleagues, partners, or VCs who have spectacular track records without asking your own questions
+ Come up with thoughts on a company before you ask a senior VC what they think
+ And then compare and learn
+ The senior VC may not always be right, but you can still learn a lot
+
+Don’t be transactional
+ It’s very obvious and also very easy to fall down this path because of how much you want to succeed — “great to meet you! what are 3 deals you are currently looking at?” or “hi teen! are there any apps that are blowing up in your school or amongst you and your friends?” For me, it’s always been friends first, business second
+ Up to you on how you want to play though
+ Be authentic
+ Founders can tell when an investor is actually interested in talking to the team/founders vs purely trying to get “deal flow
+ ” Don’t
+do
+it
+ 🙄
+Time management tips that I wish I implemented earlier: Block off chunks of time for different projects you are working on or different parts of your job, preferably recurring
+ Set off some time every morning and night to go through and clean out your inbox as well as follow up with folks with a priority on founders
+ I remember a friend of mine told me he blocked off every Friday morning to focus on doing deep dives on sectors he wanted to learn more about
+ It’s incredibly easy for everything to spiral out of control if you don’t manage it well, especially your inbox
+
+Tools I use: Clearbit Connect (Gmail widget: find emails + smart contact info), Rapportive (Gmail widget: smart contact info), Streak (CRM in your inbox), Voila Norbert (find emails), Calendly (schedule calls/meetings), Google Calendar (RIP Sunrise 😢), Outlook iOS
+Newsletters I read: Strictly VC, LAUNCH Ticker, Ben Thompson’s Stratechery, The Information, CB Insights, Mattermark Daily
+Meeting suggestions: I prefer 15m calls for quick chats/advice, 30m video calls for initial intros and potential investments, 1h meetings if local + post-intro meeting/call
+ Like I said earlier, I don’t suggest doing back to back calls, let alone meetings, to give yourself some time to recap the prior conversation
+ In addition, when arranging calls, make sure to suggest times in the timezone of the recipient, not just your own
+ It’s just a nice thing to do
+
+Email management: Here’s the setup I used
+ Use Streak
+ Set up a filter for all your newsletters
+
+Email management as an early adopter: Make a new email for all the beta products or new apps you try out and waitlists you sign up for
+ Or even simpler, set up a Gmail filter and append a plus sign or period and a word to the end of your email address (e
+ g
+ using hi+beta@tiffanyzhong
+ com for beta apps)
+Treat founders with an insane amount of respect
+ Be very careful about this newfound power dynamic and don’t let it change you — stay true to your values and humility
+ Reply to emails within a few days (I was unfortunately terrible at email management and wish I was better)
+ Don’t reschedule founders 5x
+ Don’t cancel at the last minute
+ Try not to be late to meetings (do not do back to back meetings — you will be late and you will hate yourself
+ )
+ Don’t be rude or unnecessarily abrasive during meetings
+ Don’t act entitled
+ You’re no better than the founder
+ As a VC, you’re here to support, advise, and give a shoulder for founders to cry on (metaphorically, but maybe literally too)
+ You’re not here to steal the spotlight from the founders
+ And you’re definitely not here to run the company
+
+At the same time, be straightforward and honest, but with a humble tone
+ Give feedback with anecdotal evidence and explain why you are *actually* passing on the company, rather than giving a generic pass response
+ Read Ben Horowitz’s post repeatedly until you finally have the guts to be real with founders
+
+My favorite question to ask VCs and founders alike is “What are your biggest concerns?” A lot of VCs will hype up a potential investment or portfolio company, so you want to dig deeper and figure out what the biggest investment risks are
+ As for founders, I think it’ll bring out self-awareness and thoughtfulness if you can answer that question well
+
+Some founders are very good at answering investors’ typical questions, but it doesn’t mean that they’re smart or that their company is doing well
+ Be able to identify the differences between whether someone is actually smart or just great at answering “correctly
+ ”
+Last thing…being a VC is not as glamorous as you think
+ It’s not all private jets and parties on yachts (neither of which I have been on)
+
+
+
+
+Hit recommend if you learned something! I spent the last 18 months writing this and would appreciate a ❤
+Follow me on Twitter if you want to be notified when I release my next pieces
+
+P
+S
+ If you’re a talented engineer or designer looking for a fun side project, shoot me an email! 🔑
+
+It means replying to iMessages and Snapchats within an hour
+
+It means taking 10 photos of every meal you have and uploading the best one out of the 10 to Instagram and/or Facebook
+
+It means taking a ton of selfies on Snapchat when you are with friends or bored at home
+
+It means having a “finsta” (fake Instagram) aka 2 Instagram accounts — 1 public account for pretty photos + 1 private account for random, personal photos where you only allow close friends to follow it
+
+It means running out of iPhone battery before school is over and having to charge it at school and/or bringing a portable charger everywhere
+
+It means binge watching on Netflix with friends rather than going to parties
+
+It means applying metallic flash tattoos (temporary, don’t worry) to yourself if you’re a girl
+

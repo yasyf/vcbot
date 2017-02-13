@@ -18,12 +18,12 @@ class TZBot(object):
 
   def _set_model(self):
     with open(constants.TWEETS_PATH) as f:
-      text = f.read()
+      twitter_model = markovify.NewlineText(f.read())
 
-    twitter_model = markovify.NewlineText(text)
-    # TODO: Medium model
+    with open(constants.MEDIUM_PATH) as f:
+      medium_model = markovify.NewlineText(f.read())
 
-    self.model = twitter_model
+    self.model = markovify.combine([twitter_model, medium_model], [10, 1])
 
   def generate_tweet(self, username):
     tweet = self.model.make_short_sentence(TWEET_SIZE - len(username) - 1)

@@ -10,7 +10,7 @@ def train():
 
 def test():
   bot = TZBot()
-  bot.generate_tweet('TZBot')
+  print bot.generate_tweet('TZBot')
 
 if __name__ == '__main__':
   start()
