@@ -13,4 +13,4 @@ def test():
   print bot.generate_tweet('TZBot')
 
 if __name__ == '__main__':
-  start()
+  test()

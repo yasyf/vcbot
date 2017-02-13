@@ -1,5 +1,7 @@
 import os
 
 TZBOT_DIR = os.path.dirname(os.path.realpath(__file__))
-TWEETS_PATH = os.path.join(TZBOT_DIR, os.pardir, 'data', 'tweets.txt')
+TWEETS_DIR = os.path.join(TZBOT_DIR, os.pardir, 'data', 'tweets')
+TWEET_PATH = lambda username: os.path.join(TWEETS_DIR, '{}.txt'.format(username))
 MEDIUM_PATH = os.path.join(TZBOT_DIR, os.pardir, 'data', 'medium.txt')
+TARGETS = os.getenv('TWITTER_TARGETS').split(',')
