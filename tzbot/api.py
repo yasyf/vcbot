@@ -1,4 +1,10 @@
-import tweepy, os
+import tweepy, os, constants
+
+MAX_COUNT = 200
+TARGET = os.getenv('TWITTER_TARGET')
+
+skip_mentions = lambda w: not w.startswith('@')
+extract_text = lambda t: ' '.join(filter(skip_mentions, t.text.split(' '))).encode('utf-8')
 
 class API(object):
   def __init__(self):
@@ -15,3 +21,12 @@ class API(object):
 
   def tweet(self, text, parent_id=None):
     self.client.update_status(text, parent_id)
+
+  def download_all_target_tweets(self):
+    with open(constants.TWEETS_PATH, 'wb') as f:
+      tweets = self.client.user_timeline(TARGET, count=MAX_COUNT)
+      while len(tweets):
+        oldest = tweets[-1].id - 1
+        text = '\n'.join(map(extract_text, tweets))
+        f.write(text)
+        tweets = self.client.user_timeline(TARGET, count=MAX_COUNT, max_id=oldest)
