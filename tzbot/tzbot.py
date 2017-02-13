@@ -23,7 +23,7 @@ class TZBot(object):
     with open(constants.MEDIUM_PATH) as f:
       medium_model = markovify.NewlineText(f.read())
 
-    self.model = markovify.combine([twitter_model, medium_model], [10, 1])
+    self.model = markovify.combine([twitter_model, medium_model], [1, 0.05])
 
   def generate_tweet(self, username):
     tweet = self.model.make_short_sentence(TWEET_SIZE - len(username) - 1)
