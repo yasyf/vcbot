@@ -24,9 +24,9 @@ class API(object):
   def download_all_target_tweets(self):
     for target in constants.TARGETS:
       with open(constants.TWEET_PATH(target), 'wb') as f:
-        tweets = self.client.user_timeline(target, count=MAX_COUNT)
+        tweets = self.client.user_timeline(target, count=MAX_COUNT, include_rts=False)
         while len(tweets):
           oldest = tweets[-1].id - 1
           text = '\n'.join(map(extract_text, tweets))
           f.write(text)
-          tweets = self.client.user_timeline(target, count=MAX_COUNT, max_id=oldest)
+          tweets = self.client.user_timeline(target, count=MAX_COUNT, include_rts=False, max_id=oldest)
