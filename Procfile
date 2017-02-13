@@ -1,1 +1,1 @@
-bot: python -m tzbot
+bot: python -m vcbot

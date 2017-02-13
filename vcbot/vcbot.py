@@ -13,7 +13,7 @@ def markovify_file(path):
   with open(path) as f:
     return markovify.NewlineText(f.read())
 
-class TZBot(object):
+class VCBot(object):
   def __init__(self):
     self.api = API()
     self.stream = Stream(self)

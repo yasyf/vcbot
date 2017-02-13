@@ -1,16 +1,16 @@
-from tzbot import TZBot
+from vcbot import VCBot
 
 def start():
-  bot = TZBot()
+  bot = VCBot()
   bot.come_alive()
 
 def train():
-  bot = TZBot()
+  bot = VCBot()
   bot.train()
 
 def test():
-  bot = TZBot()
-  print bot.generate_tweet('TZBot')
+  bot = VCBot()
+  print bot.generate_tweet('VCBot')
 
 if __name__ == '__main__':
   start()
