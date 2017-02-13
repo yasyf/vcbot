@@ -27,6 +27,7 @@ class TZBot(object):
       self.api.tweet(self.model.make_short_sentence(TWEET_SIZE))
 
   def come_alive(self):
+    self.maybe_tweet()
     self.stream.start()
 
   def train(self):
