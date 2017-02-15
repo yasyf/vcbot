@@ -45,21 +45,25 @@ class VCBot(object):
     length = TWEET_SIZE - len(username) - 1
     tweet = None
 
-    if random.random() <= SEED_PROB:
-      try:
-        first_seed = filter(lambda w: w.istitle(), words)[0]
-      except IndexError:
-        first_seed = random.choice(words)
-      possible_seeds = [first_seed] + random.sample(words, SEED_TRIES - 1)
-
-      for seed in possible_seeds:
-        state = (markovify.chain.BEGIN, seed)
+    try:
+      if random.random() <= SEED_PROB:
         try:
-          tweet = self.model.make_short_sentence(length, init_state=state)
-        except KeyError:
-          continue
-        if tweet:
-          break
+          first_seed = filter(lambda w: w.istitle(), words)[0]
+        except IndexError:
+          first_seed = random.choice(words)
+        possible_seeds = [first_seed] + random.sample(words, SEED_TRIES - 1)
+
+        for seed in possible_seeds:
+          state = (markovify.chain.BEGIN, seed)
+          try:
+            tweet = self.model.make_short_sentence(length, init_state=state)
+          except (KeyError, UnicodeDecodeError):
+            continue
+          if tweet:
+            break
+    except:
+      # something bad happened
+      pass
 
     if not tweet:
       tweet = self.model.make_short_sentence(length)
