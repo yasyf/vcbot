@@ -47,7 +47,7 @@ class TZBot(object):
 
     if random.random() <= SEED_PROB:
       try:
-        first_seed = filter(str.istitle, words)[0]
+        first_seed = filter(unicode.istitle, words)[0]
       except IndexError:
         first_seed = random.choice(words)
       possible_seeds = [first_seed] + random.sample(words, SEED_TRIES - 1)
