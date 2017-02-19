@@ -15,6 +15,10 @@ def markovify_file(path):
   with open(path) as f:
     return markovify.NewlineText(f.read())
 
+def filter_out(tweet, f):
+  not_f = lambda w: not f(w)
+  return ' '.join(filter(not_f, tweet.split(' ')))
+
 class TZBot(object):
   def __init__(self):
     self.api = API()
@@ -67,5 +71,7 @@ class TZBot(object):
 
     if not tweet:
       tweet = self.model.make_short_sentence(length)
+
+    tweet = filter_out(tweet, lambda w: w.startswith('@'))
 
     return '@{username} {tweet}'.format(username=username, tweet=tweet)
