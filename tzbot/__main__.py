@@ -2,6 +2,7 @@ from tzbot import TZBot
 
 def start():
   bot = TZBot()
+  bot.train()
   bot.come_alive()
 
 def train():
