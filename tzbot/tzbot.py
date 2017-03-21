@@ -72,6 +72,6 @@ class TZBot(object):
     if not tweet:
       tweet = self.model.make_short_sentence(length)
 
-    tweet = filter_out(tweet, lambda w: w.startswith('@'))
+    tweet = filter_out(tweet, lambda w: w.startswith('@') or w.startswith('http'))
 
     return '@{username} {tweet}'.format(username=username, tweet=tweet)
