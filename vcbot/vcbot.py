@@ -4,7 +4,7 @@ import markovify, constants, os, time, random
 
 TWEET_SIZE = 140
 MEDIUM_WEIGHT = 1
-TWEET_DELAY = 60 * 60
+TWEET_DELAY = 60 * 60 * 12
 SEED_TRIES = 3
 SEED_PROB = 0.7
 
