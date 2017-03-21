@@ -2,6 +2,7 @@ from vcbot import VCBot
 
 def start():
   bot = VCBot()
+  bot.train()
   bot.come_alive()
 
 def train():

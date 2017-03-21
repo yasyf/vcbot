@@ -23,10 +23,17 @@ class API(object):
 
   def download_all_target_tweets(self):
     for target in constants.TARGETS:
-      with open(constants.TWEET_PATH(target), 'wb') as f:
+      fname = constants.TWEET_PATH(target)
+      if not os.path.exists(fname):
+        open(fname, 'a').close()
+      with open(fname, 'rb') as f:
+        lines = set(f.readlines())
+      with open(fname, 'ab') as f:
         tweets = self.client.user_timeline(target, count=MAX_COUNT, include_rts=False)
         while len(tweets):
           oldest = tweets[-1].id - 1
-          text = '\n'.join(map(extract_text, tweets))
+          new_lines = filter(lambda t: t not in lines, map(extract_text, tweets))
+          lines |= set(new_lines)
+          text = '\n'.join(new_lines)
           f.write(text)
           tweets = self.client.user_timeline(target, count=MAX_COUNT, include_rts=False, max_id=oldest)
