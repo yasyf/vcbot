@@ -1,6 +1,6 @@
 from api import API
 from stream import Stream
-import markovify, constants, os, time, random
+import markovify, constants, os, time, random, HTMLParser
 
 TWEET_SIZE = 140
 MEDIUM_WEIGHT = 1
@@ -73,5 +73,6 @@ class VCBot(object):
       tweet = self.model.make_short_sentence(length)
 
     tweet = filter_out(tweet, lambda w: w.startswith('@'))
+    tweet = HTMLParser.HTMLParser().unescape(tweet)
 
     return '@{username} {tweet}'.format(username=username, tweet=tweet)
