@@ -11,7 +11,7 @@ def train():
 
 def test():
   bot = TZBot()
-  print bot.generate_tweet('TZBot', 'yes no hello love Berkeley')
+  print bot.generate_reply('TZBot', 'yes no hello love Berkeley')
 
 if __name__ == '__main__':
   start()
