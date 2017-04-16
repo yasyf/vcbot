@@ -30,7 +30,7 @@ class VCBot(object):
   def maybe_tweet(self):
     if (time.time() - self.last_tweet) > TWEET_DELAY:
       self.last_tweet = time.time()
-      self.api.tweet(self.model.make_short_sentence(TWEET_SIZE))
+      self.api.tweet(self.generate_tweet(TWEET_SIZE))
 
   def come_alive(self):
     self.maybe_tweet()
@@ -44,7 +44,16 @@ class VCBot(object):
     medium_model = markovify_file(constants.MEDIUM_PATH)
     self.model = markovify.combine(tweet_models + [medium_model], [1] * len(tweet_models) + [MEDIUM_WEIGHT])
 
-  def generate_tweet(self, username, seed):
+  def process_tweet(self, tweet):
+    tweet = filter_out(tweet, lambda w: w.startswith('@'))
+    tweet = HTMLParser.HTMLParser().unescape(tweet)
+    return tweet
+
+  def generate_tweet(self, length):
+    tweet = self.model.make_short_sentence(length)
+    return self.process_tweet(tweet)
+
+  def generate_reply(self, username, seed):
     words = seed.split(' ')
     length = TWEET_SIZE - len(username) - 1
     tweet = None
@@ -72,7 +81,4 @@ class VCBot(object):
     if not tweet:
       tweet = self.model.make_short_sentence(length)
 
-    tweet = filter_out(tweet, lambda w: w.startswith('@'))
-    tweet = HTMLParser.HTMLParser().unescape(tweet)
-
-    return '@{username} {tweet}'.format(username=username, tweet=tweet)
+    return '@{username} {tweet}'.format(username=username, tweet=self.process_tweet(tweet))
