@@ -1,6 +1,6 @@
 from api import API
 from stream import Stream
-import markovify, constants, os, time, random, HTMLParser
+import markovify, constants, os, time, random, HTMLParser, re
 
 TWEET_SIZE = 140
 MEDIUM_WEIGHT = 0.05
@@ -17,7 +17,7 @@ def markovify_file(path):
 
 def filter_out(tweet, f):
   not_f = lambda w: not f(w)
-  return ' '.join(filter(not_f, tweet.split(' ')))
+  return ' '.join(filter(not_f, re.split(r'\s', tweet)))
 
 class TZBot(object):
   def __init__(self):
